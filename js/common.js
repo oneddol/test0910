@@ -22,6 +22,12 @@
         $('#kimBox').load(url)
     })
 
+    $('.hiNav > h1 > a').on('click', function(e){
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $(this).load(url)
+    })
+
 
 
 
