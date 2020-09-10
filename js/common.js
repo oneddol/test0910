@@ -12,7 +12,16 @@
         }
     )
 
+    //기본은 main.html 표시화면
     $('#kimBox').load('main.html')
+
+    $('.topmenu > a').on('click', function(e){
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#kimContainer').remove()
+        $('#kimBox').load(url)
+    })
+
 
 
 
